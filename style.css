@@ -1,0 +1,77 @@
+.all-content{
+    display: none;
+}
+.all-content.active{
+    display: block;
+}
+
+.main-block{
+    display: grid;
+    grid-template-columns: repeat(2, 529px);
+
+}
+
+ul {
+    color: #868686;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 45px;
+    position: relative;
+    font-family: "Lexend", Sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+.inp{
+    display: none;
+}
+.inp:nth-child(1):checked ~ ul .circle span:nth-child(1){font-size: 30px;}
+.inp:nth-child(2):checked ~ ul .circle span:nth-child(2){font-size: 30px;}
+.inp:nth-child(3):checked ~ ul .circle span:nth-child(3){font-size: 40px;}
+.inp:nth-child(4):checked ~ ul .circle span:nth-child(4){font-size: 30px;}
+.inp:nth-child(5):checked ~ ul .circle span:nth-child(5){font-size: 30px;}
+
+.inp:nth-child(1):checked ~ ul .circle {top: 0px;}
+.inp:nth-child(2):checked ~ ul .circle {top: 45px;}
+.inp:nth-child(3):checked ~ ul .circle {top: 90px; left:-45px;}
+.inp:nth-child(4):checked ~ ul .circle {top: 135px; left:50px;}
+.inp:nth-child(5):checked ~ ul .circle {top: 183px; left:55px;}
+
+.circle{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 80px;
+    margin-left: 0;
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+.circle span{
+
+}
+.circle span{
+    transition: 0.3s ease;
+    display: block;
+    opacity: 0.0;
+    font-size: 0;
+}
+.content-text{
+
+    font-size: 24px;
+    font-weight: 300;
+    color: #161616;
+    font-family: "Lexend", Sans-serif;
+}
+.helper{
+    color: #868686;
+    font-size: 24px;
+}
+.yordamchi{
+    font-size: 30px;
+    color: #161616;
+}
+label{
+    transition: all 1s;
+}
